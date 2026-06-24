@@ -1,0 +1,24 @@
+{
+  "name": "catchmind",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.1.2",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@11.1.2",
+  "devDependencies": {
+    "turbo": "^2.9.18"
+  }
+}
