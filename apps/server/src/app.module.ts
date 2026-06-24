@@ -1,5 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
+import { RedisConfigModule } from './redis/redis.module';
+import { PrismaModule } from './prisma/prisma.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -9,6 +11,8 @@ import { AppService } from './app.service';
       isGlobal: true,
       envFilePath: '.env',
     }),
+    RedisConfigModule,
+    PrismaModule,
   ],
   controllers: [AppController],
   providers: [AppService],
