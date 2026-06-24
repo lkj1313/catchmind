@@ -6,6 +6,5 @@ node_modules
 .env.local
 .pnpm-store
 
-# Prisma
-prisma/migrations/
-src/generated/prisma
+# Prisma generated client
+/apps/server/src/generated/prisma
